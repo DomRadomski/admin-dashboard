@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Palette Preview</title>
+
+<style>
+/* <<< PASTE YOUR :root COLOR VARIABLES HERE >>> */
+
+:root {
+  /* Cool Blue-White */
+  --white-standard: #f3f7ff;
+  --white-light: #ffffff;
+  --white-dark: #d9e3f7;
+
+  /* Violet */
+  --violet-standard: #8e4efc;
+  --violet-light: #c0a0ff;
+  --violet-dark: #6320c4;
+
+  /* Dark Pink Accent */
+  --pink-standard: #e02f73;
+  --pink-light: #ff7fae;
+  --pink-dark: #a41653;
+}
+
+
+
+/* GENERAL LAYOUT */
+body {
+  font-family: sans-serif;
+  background: var(--white-light);
+  padding: 2rem;
+  color: #333;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.swatch {
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.color-box {
+  width: 100%;
+  height: 70px;
+  border-radius: 6px;
+}
+
+/* COLOR ASSIGNMENTS */
+.white-standard  { background: var(--white-standard); }
+.white-light     { background: var(--white-light); }
+.white-dark      { background: var(--white-dark); }
+
+.violet-standard { background: var(--violet-standard); }
+.violet-light    { background: var(--violet-light); }
+.violet-dark     { background: var(--violet-dark); }
+
+.pink-standard   { background: var(--pink-standard); }
+.pink-light      { background: var(--pink-light); }
+.pink-dark       { background: var(--pink-dark); }
+</style>
+
+</head>
+<body>
+
+<h1>Color Palette Preview</h1>
+
+<h2>Cool Blue-White</h2>
+<div class="swatch-grid">
+  <div class="swatch"><div class="color-box white-standard"></div><span>white-standard</span></div>
+  <div class="swatch"><div class="color-box white-light"></div><span>white-light</span></div>
+  <div class="swatch"><div class="color-box white-dark"></div><span>white-dark</span></div>
+</div>
+
+<h2>Violet</h2>
+<div class="swatch-grid">
+  <div class="swatch"><div class="color-box violet-standard"></div><span>violet-standard</span></div>
+  <div class="swatch"><div class="color-box violet-light"></div><span>violet-light</span></div>
+  <div class="swatch"><div class="color-box violet-dark"></div><span>violet-dark</span></div>
+</div>
+
+<h2>Dark Pink Accents</h2>
+<div class="swatch-grid">
+  <div class="swatch"><div class="color-box pink-standard"></div><span>pink-standard</span></div>
+  <div class="swatch"><div class="color-box pink-light"></div><span>pink-light</span></div>
+  <div class="swatch"><div class="color-box pink-dark"></div><span>pink-dark</span></div>
+</div>
+
+</body>
+</html>

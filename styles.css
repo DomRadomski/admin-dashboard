@@ -1,0 +1,17 @@
+:root {
+  /* Cool Blue-White */
+  --white-standard: #f3f7ff;
+  --white-light: #ffffff;
+  --white-dark: #d9e3f7;
+
+  /* Violet */
+  --violet-standard: #8e4efc;
+  --violet-light: #c0a0ff;
+  --violet-dark: #6320c4;
+
+  /* Dark Pink Accent */
+  --pink-standard: #e02f73;
+  --pink-light: #ff7fae;
+  --pink-dark: #a41653;
+}
+
