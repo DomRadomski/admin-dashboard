@@ -5,46 +5,161 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     </head>
+
     <body>
         <div class="container">
+
             <div class="sidebar">
-                <h1>Dashboard</h1>
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
+
+                <div class="sidebar-title">
+                    <i class="fa-solid fa-cube"></i>
+                    <h1>Dashboard</h1>
+                </div>
+
+                <div class="menu-items">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i><p>Home</p></li>
+                        <li><i class="fa-solid fa-user"></i><p>Profile</p></li>
+                        <li><i class="fa-solid fa-envelope"></i><p>Messages</p></li>
+                        <li><i class="fa-solid fa-clock-rotate-left"></i><p>History</p></li>
+                        <li><i class="fa-solid fa-list-check"></i><p>Tasks</p></li>
+                        <li><i class="fa-solid fa-users"></i><p>Communities</p></li>
+                    </ul>
+
+                    <ul>
+                        <li><i class="fa-solid fa-gear"></i><p>Settings</p></li>
+                        <li><i class="fa-solid fa-circle-question"></i><p>Support</p></li>
+                        <li><i class="fa-solid fa-shield-halved"></i><p>Privacy</p></li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="header">
-                
-                    <div class="top-left"><input type="text"></div>
-                    <div class="top-right"><h3>Dominik Radomski</h3></div>
-                
 
-                
-                    <div class="bottom-left">
-                        <h2>Dominik Radomski (@drski2000)</h2>
-                    </div>
-                    <div class="bottom-right">
-                        <ul>
-                            <li>New</li>
-                            <li>Upload</li>
-                            <li>Share</li>
-                        </ul>
+                <div class="top-left">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search projects, tasks...">
                     </div>
                 </div>
+
+                <div class="top-right">
+                    <div class="profile-box">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h3>Dominik Radomski</h3>
+                    </div>
+                </div>
+
+
+                <div class="bottom-left">
+                    <div class="profile-info">
+                        <i class="fa-solid fa-circle-user"></i>
+
+                        <div class="profile-text">
+                            <h2>Dominik Radomski (@drski2000)</h2>
+                            <p>Full-Stack Developer • Creative Problem Solver</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-right">
+                    <ul class="action-buttons">
+                        <li>Create</li>
+                        <li>Upload</li>
+                        <li>Share</li>
+                    </ul>
+                </div>
+
+
             </div>
-            <div class="content"></div>
+
+            <div class="content">
+                
+                <div class="cards">
+                    <h3 id="project-title">Your Projects</h3>
+
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>A dynamic dashboard built using HTML, CSS Grid, and JavaScript. Designed to practice responsive layouts and establish the foundation for my future portfolio UX.</p>
+                        <div class="icons">⭐ 🔗 💬</div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Portfolio Website</h3>
+                        <p>A fully responsive personal portfolio built with React and Vite. Features project filtering, smooth animations, and a dark/light theme system.</p>
+                        <div class="icons">⭐ 🔗 💬</div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Task Manager App</h3>
+                        <p>A CRUD-based task manager using Node.js and MongoDB. Includes user authentication, cloud storage, and custom category tagging.</p>
+                        <div class="icons">⭐ 🔗 💬</div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Odin Project Exercises</h3>
+                        <p>A collection of hands-on JavaScript, DOM, and web fundamentals challenges completed as part of The Odin Project curriculum.</p>
+                        <div class="icons">⭐ 🔗 💬</div>
+                    </div>
+
+                    <div class="card">
+                        <h3>React Component Library</h3>
+                        <p>A growing library of reusable components such as buttons, cards, modals, and form elements — styled with CSS variables for easy theming.</p>
+                        <div class="icons">⭐ 🔗 💬</div>
+                    </div>
+
+                </div>
+
+                <div class="updates">
+                    <h3>Updates</h3>
+                
+                    <div class="update">
+                        <h5>Completed Foundations</h5>
+                        <p>Finished the Odin Project Foundations course, covering HTML, CSS, Git, JavaScript basics, and building several small interactive projects.</p>
+                    </div>
+
+                    <div class="update">
+                        <h5>New Dashboard Layout</h5>
+                        <p>Designed and built this dashboard using CSS Grid to improve layout skills and prepare the structure for my upcoming portfolio.</p>
+                    </div>
+
+                    <div class="update">
+                        <h5>Learning React</h5>
+                        <p>Diving deeper into React hooks, component architecture, and state management while building small component-based applications.</p>
+                    </div>
+
+                </div>
+
+                <div class="techstack">
+
+                    <h3 >Tech Stack</h3>
+                    
+                    <div class="tech">
+                        <img src="" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="tech">
+                        <img src="" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="tech">
+                        <img src="" alt="">
+                        <p>React.js</p>
+                    </div>
+                    <div class="tech">
+                        <img src="" alt="">
+                        <p>Node.js</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
         </div>
     </body>
+
 </html>
